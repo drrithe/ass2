@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<title>Box Office</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body
+h1, h2, h3, h4, h5, h6 {
+  font-family: "font-family:verdana";
+}
+</style>
+<script>
+function show(){
+   document.getElementById("msg").innerHTML = "Successful.";
+}
+</script>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="font-family:verdana;">
+    <a href="#home" class="w3-bar-item w3-button">Box Office</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Home</a>
+      <a href="#menu" class="w3-bar-item w3-button">Registration</a>
+      <a href="#contact" class="w3-bar-item w3-button">View Report</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Box Office</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="tk.png" class="w3-round w3-image " alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center" style="font-family:verdana;">Box office</h1>
+      <h4 class="w3-center" style="font-family:verdana;">Tradition since 1889</h4>
+      <p class="w3-large" style="font-family:verdana;">A box office or ticket office is a place where tickets are sold to the public for admission to an event. Patrons may perform the transaction
+         at a countertop, through a hole in a wall or window, or at a wicket.
+       Box office business can be measured in the terms of the number of tickets sold or the amount of money raised by ticket sales (revenue). </p>
+      <p class="w3-large w3-hide-medium" style="font-family:verdana;">Cinema is immensely popular in India. ... The Indian film industry reached overall revenues of $1.86 billion (₹93 billion) in 2011. In 2015, India had a total box office gross of US$2.1 billion, the third largest in the world.
+        In 2011, Indian cinema sold over 3.5 billion tickets worldwide, 900,000 more than Hollywood. </p>
+    </div>
+
+  </div>
+  <hr>
+  <div class="w3-row w3-padding-64 " style="font-family:verdana;" id="menu">
+
+    <h1 class="w3-center" style="font-family:verdana; margin: -15px 0px 0px 0px;">Registration</h1>
+    <div class="container " style=" margin: 25px 0px 0px 0px;">
+
+  <form name="form" class="form-horizontal w3-col m6 w3-padding-large " onsubmit="return validation();" method="post" style="margin: 15px 0px 0px 0px; ">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Name</label>
+      <div class="col-sm-7">
+        <input type="Name" class="form-control" id="name" placeholder="Enter name" name="name">
+      </div>
+    </div>
+    <div class="form-group  ">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+      <div class="col-sm-7">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" size="50 " name="email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Mobile no</label>
+      <div class="col-sm-7">
+        <input type="tel" class="form-control" id="no" placeholder="Enter number"  name="no">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Number of seats</label>
+      <div class="col-sm-7">
+        <input type="number" class="form-control" id="seat" placeholder="Enter number of seats"  name="seat">
+      </div>
+  </div>
+  <div>
+			<label for="name">Gender :</label>
+			<label><input type="radio" id ="male" name="Gender" required>Male</label>
+			<label><input type="radio" id ="female" name="Gender" required>Female</label>
+			<label><input type="radio" id ="other" name="Gender" required>Other</label>
+		</div><br>
+  <div>
+			<label for="date">Save Date :</label>
+			<input type="date" id="date" name="date">
+			<label for="time">Save Time :</label>
+			<input type="time" id="time" name="time">
+		</div><br>
+			<label for="desc"> Leave comment :</label>
+			<input type="textarea" id = "desc" name="" required style="height: 100px; width: 200px">
+		<br><br><br><br>
+  </form>
+  <div class="w3-col m6 w3-padding-large w3-hide-small">
+   <img src="m.png" class="w3-round w3-image " alt="Table Setting" width="500" height="300">
+  </div>
+  <div class="col-sm-offset-4 col-sm-10">
+  <button id="submit" onclick="data();" style="font-family:verdana;">submit</button>
+    <p id="msg"></p>
+  </div>
+
+  </div>
+
+  </div>
+  <hr>
+
+  </div>
+  <!-- Contact Section -->
+  <div class="w3-container w3-center" id="contact" >
+  <div class="w3-container w3-center" id="contact" >
+    <div style="background-image: url('cam.png') margin: 25px 0px 0px 0px;">
+    <h1 style="font-family:verdana">View Report</h1>
+    <h4 style="font-family:verdana"> Your booking Report</h4><br>
+<div class="container">
+    <table class="table w3-center" id="myTable" width="100%">
+        <thead>
+      <tr class="w3-center" >
+        <th class="w3-center">Name</th>
+        <th class="w3-center"> Email </th>
+        <th class="w3-center"> Mobile No</th>
+        <th class="w3-center"> Seats</th>
+        <th class="w3-center"> Date</th>
+        <th class="w3-center"> Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><p id="data1"></p></td>
+        <td><p id="data2"></p></td>
+        <td><p id="data3"></p></td>
+        <td><p id="data4"></p></td>
+        <td><p id="data6"></p></td>
+        <td><p id="data7"></p></td>
+      </tr>
+    </tbody>
+    </table>
+    <script>
+    function validation() {                             //validation of form and to check empty fields
+  	var valid= true;
+    name = document.getElementById("name").value;
+    email = document.getElementById("email").value;
+    cno = document.getElementById("no").value;
+    var atposition=email.indexOf("@");
+    var dotposition=email.lastIndexOf(".");
+
+  if (name === "") {
+    alert("Name cannot be empty");
+    valid = false;
+  } else if (name.length<3) {
+    alert("Name too small");
+    valid = false;
+  } else if (name.length>30) {
+    alert("Name too big");
+    valid = false;
+  } else if (isNaN(name)==false){
+    alert("Name cannot be numeric");
+    valid=false;
+  } else if (email === "") {
+    alert("Email id cannot be empty");
+    valid = false;
+  } else if (atposition<1 || dotposition<atposition+2 || dotposition+2>=email.length) {
+    alert("Invalid Email id");
+    valid = false;
+  } else if (cno === "") {
+    alert("Contact No. cannot be empty");
+    valid = false;
+  } else if (isNaN(cno)==true) {
+    alert("Enter a Valid Phone Number (Only digits) ");
+    valid = false;
+  } else if (cno.length !=10 ) {
+    alert("Enter a Valid Phone Number (10 digit only)");
+    valid = false;
+  }
+  return valid;
+};
+
+
+    function data() {
+    	console.log("Hello")
+    	if(validation())
+    	{
+          var jobValue1 = document.getElementById("name").value;
+          var jobValue2 = document.getElementById("email").value;
+          var jobValue3 = document.getElementById("no").value;
+          var jobValue4 = document.getElementById("seat").value;
+          var jobValue6 = document.getElementById("date").value;
+          var jobValue7 = document.getElementById("time").value;
+          document.getElementById("data1").innerHTML = jobValue1;
+          document.getElementById("data2").innerHTML = jobValue2;
+          document.getElementById("data3").innerHTML = jobValue3;
+          document.getElementById("data4").innerHTML = jobValue4;
+          document.getElementById("data6").innerHTML = jobValue6;
+          document.getElementById("data7").innerHTML = jobValue7;
+
+
+}
+}
+
+</script>
+  </div>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>
